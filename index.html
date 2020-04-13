@@ -28,8 +28,9 @@
 		<header id="bannerhome">
 			<nav class=" navbar navbar-dark bg-dark navbar-expand-lg" id="navigation">
 			
+				<div class="homeimg">
 				<img class="bannerimg"  src="satyamev.png">
-				
+				</div>
 
 			
 
@@ -407,6 +408,11 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 
+ <script> setTimeout(function () {
+		$('.loader_bg').fadeToggle();
+	}, 1500);</script>
+
+
 
 <script src="jquery.ripples-min.js"></script>
 
@@ -414,7 +420,7 @@
 
             $(document).ready(function() {
                 
-                $('#bannerhome').ripples({
+                $('header').ripples({
                     dropRadius: 12 ,
                     perturbance:0.05 ,
                 });
@@ -422,9 +428,7 @@
             
         </script>
 
-        <script> setTimeout(function () {
-		$('.loader_bg').fadeToggle();
-	}, 1500);</script>
+       
 		
 	
 

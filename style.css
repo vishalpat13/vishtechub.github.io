@@ -70,9 +70,9 @@ font-family: 'Josefin Sans', sans-serif;
 
 
 
-header{
+#bannerhome{
 	
-
+display: block; !important
 width: 100%; height: 100vh;
 background-size: cover;
 animation-name:bganim; animation-duration: 40s;
@@ -85,24 +85,24 @@ opacity: 0.7;
 }
 
 
-@keyframes bganim{
+@keyframes bganim {
 0%{
-background-image: url('haridwar-687346_1920.jpg');
+background-image: url('haridwar-687346_1920.jpg'); !important
 }
 20%{
-background-image: url('shriMartand.jpg');
+background-image: url('shriMartand.jpg'); !important 
 }
 30%{
-background-image: url('stonehampi.jpg');
+background-image: url('stonehampi.jpg');  !important
 }
 50%{
-background-image: url('shreekrishna.jpg');
+background-image: url('shreekrishna.jpg');  !important
 }
 70%{
-background-image: url('sribuddha.jpg');
+background-image: url('sribuddha.jpg');  !important
 }
 80%{
-background-image: url('shrigajanand.jpg');
+background-image: url('shrigajanand.jpg');  !important
 }
 /*75%{
 background-image: url('Mahasamudramanthan.jpg');

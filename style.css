@@ -1,20 +1,90 @@
 
+
+
+/*preloader starts*/
+
+.loader_bg {
+    position: fixed;
+    z-index: 9999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+
+.loader:before, .loader:after {
+    content: '';
+    border: 1em solid #E91E63;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+
+.loader:before {
+    animation-delay: .5s;
+}
+
+@keyframes loader {
+    0% {
+        transform: scale(0);
+        opacity: 0; }
+    50% {
+        opacity: 1; }
+    100% {
+        transform: scale(1);
+        opacity: 0; }
+}
+
+
+/*preloader ends*/
+
+
+
+
+
+
+
 *{margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: 'Josefin Sans', sans-serif;
 }
 
+
+
+
+
+
+
 header{
+	
+
 width: 100%; height: 100vh;
 background-size: cover;
-animation-name:bganim; animation-duration: 30s;
-animation-direction: alternate;
-animation-timing-function: ease-in-out linear;
+animation-name:bganim; animation-duration: 40s;
+/*animation-direction: linear;*/
+animation-timing-function:  linear;
 animation-iteration-count: infinite;
 background-position: center;
+opacity: 0.7;
 
 }
+
+
 @keyframes bganim{
 0%{
 background-image: url('haridwar-687346_1920.jpg');
@@ -22,31 +92,31 @@ background-image: url('haridwar-687346_1920.jpg');
 20%{
 background-image: url('shriMartand.jpg');
 }
-40%{
+30%{
 background-image: url('stonehampi.jpg');
 }
-60%{
+50%{
 background-image: url('shreekrishna.jpg');
 }
-80%{
+70%{
 background-image: url('sribuddha.jpg');
 }
-90%{
+80%{
 background-image: url('shrigajanand.jpg');
 }
-100%{
+/*75%{
 background-image: url('Mahasamudramanthan.jpg');
-}
+}*/
 100%{
 background-image: url('wheel.jpg');
 }
 }
 
 #navigation{
-width: 100;
-/*height: 25vh;*/
+width: 100%;
+/*height: 15vh;*/
 color: white;
-background: rgba(0,0,0,0.4);
+background: rgba(0,0,0,0.7);
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -85,7 +155,7 @@ nav .menu a{
 		font-weight: bold;
 	text-decoration: none;
 	color: white;
-	transition: .5s;
+	transition: 1s;
 	
 }
 
@@ -104,7 +174,7 @@ nav .menu a{
 
 main{
 width: 100%;
-height: 85vh;
+height: 80vh;
 display: flex;
 justify-content: center;
 align-items: center; color: white;
@@ -190,8 +260,8 @@ section h1{
 .change_text:after{
 
 	content: '';
-	animation:changetext 30s infinite linear ;
-	animation-delay: 1s;
+	animation:changetext 40s infinite linear ;
+	animation-delay: 0.3s;
 	color:#F0DD27;
 }
 	
@@ -201,10 +271,10 @@ section h1{
 
 	0%{content:"Haridwar";}
 	20%{content:"Kashmir";}
-	40%{content:"Karnataka";}
-	60%{content:"Mathura";}
+	30%{content:"Karnataka";}
+	55%{content:"Mathura";}
 	70%{content:"Bihar";}
-	90%{content:"Delhi";}
+	85%{content:"Delhi";}
 	100%{content:"Madhya Pradesh";}
 }
 
@@ -214,6 +284,55 @@ section h1{
 	height: 400px;
 
 }
+
+
+
+.card{
+
+	background-color: #65d40061; !important
+}
+
+
+
+.card:hover{
+
+	-webkit-box-shadow: 5px 6px 15px 16px rgba(214,224,74,0.75);
+-moz-box-shadow: 5px 6px 15px 16px rgba(214,224,74,0.75);
+box-shadow: 5px 6px 15px 16px rgba(214,224,74,0.75);
+	cursor: pointer;
+}
+
+
+
+.appdisplay img{
+
+	display:inline-block;
+	
+
+}
+
+.iphone{
+
+	width:500px;
+	height:330px;
+
+
+}
+
+
+.android{
+
+	width:450px;
+	height:250px;
+}
+
+.ipad{
+
+	height:300px;
+	width:350px;
+}
+
+
 
 
 
